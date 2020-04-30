@@ -62,7 +62,8 @@
             //console.log("... ",queryString.slice(URI.length+10));
             window.location.href = URI;
             setTimeout(() => {
-                window.open(URL,"_blank");
+                let newTab = window.open("");
+                newTab.location.href = URL;
             },500)
             
 
